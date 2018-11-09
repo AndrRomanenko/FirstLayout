@@ -1,6 +1,7 @@
 module.exports = {
     "extends": "airbnb",
     "rules": {
-        "no-undef": "off"
+        "no-undef": "off",
+        "eol-last": "off"
     }
 };
