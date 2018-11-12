@@ -5,11 +5,11 @@ import styles from './NavMobile.scss';
 const NavMobile = () => (
   <nav className={styles.navMobile}>
     <ul>
-      <li>Home</li>
-      <li className={styles.active}>About</li>
-      <li>Work</li>
-      <li>Blog</li>
-      <li>Contact</li>
+      <li><button type="button">Home</button></li>
+      <li><button type="button">About</button></li>
+      <li><button type="button">Work</button></li>
+      <li><button type="button">Blog</button></li>
+      <li><button type="button">Contact</button></li>
     </ul>
   </nav>
 );

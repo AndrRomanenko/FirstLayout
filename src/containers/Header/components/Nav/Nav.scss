@@ -10,18 +10,31 @@
  }
 
  ul {
-  font-size: 15px;
   padding-left: 13%;
 
   li {
     display: inline;
-    padding: 1% 2%;
-    margin: 1%;
+    button {
+      text-transform: uppercase;
+      margin: 0 1%;
+      padding:1.5% 2%;
+      font-size: 16px;
+      display: inline-block;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      color: #ffff;
+      border: none;
+      background-color: #ffffff00;
+      border-radius: 5px;
+      transition: background-color 0.2s ease-out;
+    }
+    button:hover,
+    button:active {
+      background-color: #643a79;
+      transition: background-color 0.3s ease-in;
+    }
   }
  }
-}
-:local(.active){
-  background-color: #643a79;
-  border-radius: 8%;
 }
 
