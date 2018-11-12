@@ -1,0 +1,29 @@
+:local(.navMobile) {
+  width: 100%;
+  display: none;
+  color: #ffff;
+  text-transform: uppercase;
+  
+  @media (max-width: 1020px) {
+    display: inline-block;
+    text-align: center;
+    
+  }
+ 
+  ul {
+   font-size: 30px;
+   padding-inline-start: 0;
+ 
+   li {
+     display: block;
+     padding: 1%;
+     margin: 1%;
+   }
+  }
+ }
+ :local(.active){
+   background-color: #643a79;
+   border-radius: 8px;
+ }
+ 
+ 

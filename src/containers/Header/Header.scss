@@ -1,0 +1,34 @@
+@import "./../../styles/variables.scss";
+
+
+:local(.header) {
+  background-color: #87509c;
+  width: $container-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.menu){
+  padding-top: 5%;
+}
+
+:local(.message) {
+  padding: 8% 19% 0 19%;
+  text-align: center;
+  color: #f7f3ea;
+  font-size: 245%;
+  font-weight: 700;
+
+  @media (max-width: 1020px) {
+    padding-top: 4%;
+  }
+}
+
+:local(.button) {
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 3%;
+}

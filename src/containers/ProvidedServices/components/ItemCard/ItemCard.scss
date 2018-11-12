@@ -1,0 +1,32 @@
+:local(.itemCard) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 230px;
+  padding: 55px;
+
+  @media (max-width: 1020px) {
+    width: 100%;
+    padding: 2.5em 0;
+    max-width: 9999px;
+    }
+}
+
+:local(h2) {
+  padding-top: 1.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  @media (max-width: 1020px) {
+    padding-top: 0;
+  }
+}
+
+:local(.description) {
+  color: #ffffff;
+  text-align: center;
+  line-height: 145%;
+  font-size: 95%;
+  letter-spacing: 0.08em;
+}

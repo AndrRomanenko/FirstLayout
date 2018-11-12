@@ -1,0 +1,27 @@
+:local(.nav) {
+ width: 50%;
+ display: inline-block;
+ color: #ffff;
+ text-transform: uppercase;
+ 
+ @media (max-width: 1020px) {
+   display: none;
+   
+ }
+
+ ul {
+  font-size: 15px;
+  padding-left: 13%;
+
+  li {
+    display: inline;
+    padding: 1% 2%;
+    margin: 1%;
+  }
+ }
+}
+:local(.active){
+  background-color: #643a79;
+  border-radius: 8%;
+}
+
