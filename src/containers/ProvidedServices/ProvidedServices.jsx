@@ -12,7 +12,7 @@ import rocketSrc from './assets/rocket.svg';
 import pencilSrc from './assets/pencil.svg';
 import gearsSrc from './assets/gears.svg';
 
-const DATA = [
+const cards = [
   {
     image: flagSrc,
     title: 'Branding',
@@ -44,12 +44,13 @@ const ProvidedServices = () => (
     />
     <div className={styles.content}>
       {
-        DATA.map(item => (
+        cards.map(item => (
           <ItemCard
             image={item.image}
             title={item.title}
             description={item.description}
-          />))
+          />
+        ))
       }
     </div>
   </div>
