@@ -1,9 +1,9 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 
-import Dash from 'Shared/dash';
-import Header from 'Shared/header';
-import Description from 'Shared/description';
+import Dash from 'Shared/Dash';
+import Title from 'Shared/Title';
+import Description from 'Shared/Description';
 import ItemCard from './components/ItemCard';
 import styles from './ProvidedServices.scss';
 
@@ -37,7 +37,7 @@ const DATA = [
 
 const ProvidedServices = () => (
   <div className={styles.services}>
-    <Header text="Services we provide" />
+    <Title text="Services we provide" />
     <Dash />
     <Description
       text="We are working with both individuals and businesses from all over the globe to create awesome websites and applications."
