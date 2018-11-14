@@ -23,12 +23,4 @@ Title.propTypes = {
   text: string,
 };
 
-Title.propTypes = {
-  text: string,
-};
-
-Title.defaultProps = {
-  text: 'Title Sample',
-};
-
 export default Title;
