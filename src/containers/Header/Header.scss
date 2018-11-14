@@ -1,6 +1,5 @@
 @import "./../../styles/variables.scss";
 
-
 :local(.header) {
   background-color: #87509c;
   width: $container-width;
@@ -27,8 +26,35 @@
   }
 }
 
-:local(.button) {
+:local(.buttonContainer) {
   text-align: center;
   padding-bottom: 10%;
   padding-top: 3%;
+
+}
+
+:local(.button) {
+  background-color: #eb7d4b;
+  border: none;
+  color: #ffff;
+  padding: 1.7% 7%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.27px;
+  font-weight: 600;
+  margin: 4px 2px;
+  min-width: 300px;
+  min-height: 70px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px#ad613ed0;
+  
+  &:hover {
+    background: #ff9e71;
+  }
+  &:active {
+    box-shadow: 0 0px#ad613ed0;
+    transform: translateY(2px);
+  }
 }

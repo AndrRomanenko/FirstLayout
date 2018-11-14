@@ -1,0 +1,49 @@
+@import 'Styles/index.scss';
+
+// :local(.button) {
+//   background-color: #eb7d4b;
+//   border: none;
+//   color: #ffff;
+//   padding: 1.7% 7%;
+//   text-align: center;
+//   display: inline-block;
+//   font-size: 16px;
+//   letter-spacing: 0.27px;
+//   font-weight: 600;
+//   margin: 4px 2px;
+//   min-width: 300px;
+//   min-height: 70px;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   box-shadow: 0 4px#ad613ed0;
+  
+//   &:hover {
+//     background: #ff9e71;
+//   }
+//   &:active {
+//     box-shadow: 0 0px#ad613ed0;
+//     transform: translateY(2px);
+//   }
+// }
+
+:local(.button) {
+  text-transform: uppercase;
+  margin: 0 1%;
+  padding:1.5% 2%;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: #ffff;
+  border: none;
+  background-color: #ffffff00;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-out;
+
+  &:hover,
+  &:active {
+    background-color: #643a79;
+    transition: background-color 0.3s ease-in;
+  }
+}
