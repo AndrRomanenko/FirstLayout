@@ -1,0 +1,17 @@
+@import "Styles/mixins.scss";
+
+:local(.skills) {
+  @include containers-primary-style(#ffffff);
+}
+
+:local(.content) {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media(max-width: 850px) {
+    width: 100%;
+    display: block;
+  }
+}
