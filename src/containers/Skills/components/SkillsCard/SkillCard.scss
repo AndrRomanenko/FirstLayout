@@ -1,0 +1,21 @@
+:local(.container) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 0;
+  width: 300px;
+
+  @media(max-width: 850px) {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+:local(.title) {
+  font-size: 180%;
+  white-space: nowrap;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #3c4761;
+}
