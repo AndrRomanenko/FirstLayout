@@ -3,7 +3,6 @@ import React from 'react';
 import { string } from 'prop-types';
 import styles from './ItemCard.scss';
 
-
 const ItemCard = ({ image, title, description }) => (
   <div className={styles.itemCard}>
     <img src={image} alt={image} />
