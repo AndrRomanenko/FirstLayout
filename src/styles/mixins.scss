@@ -1,0 +1,22 @@
+@import "Styles/variables.scss";
+
+@mixin title-primary-style() {
+  color: #ffffff;
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-top: 7%;
+}
+
+@mixin containers-primary-style($color) {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color;
+  width: $container-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+}

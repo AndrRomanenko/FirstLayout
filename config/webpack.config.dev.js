@@ -150,6 +150,9 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+      Styles: path.resolve(__dirname, '..','src/styles/'),
+      Containers: path.resolve(__dirname, '..', 'src/containers/'),
+      Shared: path.resolve(__dirname, '..', 'src/shared/')
     },
     plugins: [
       // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -278,6 +281,10 @@ module.exports = {
             exclude: cssModuleRegex,
             use: getStyleLoaders({
               importLoaders: 1,
+              localIdentName: '[path]-[hash:base64:5]',
+              importLoaders: 2,
+              camelCase: true,
+              sourceMap: true
             }),
           },
           // Adds support for CSS Modules (https://github.com/css-modules/css-modules)
@@ -288,6 +295,10 @@ module.exports = {
               importLoaders: 1,
               modules: true,
               getLocalIdent: getCSSModuleLocalIdent,
+              localIdentName: '[path]-[hash:base64:5]',
+              importLoaders: 2,
+              camelCase: true,
+              sourceMap: true
             }),
           },
           // Opt-in support for SASS (using .scss or .sass extensions).
@@ -298,7 +309,13 @@ module.exports = {
           {
             test: sassRegex,
             exclude: sassModuleRegex,
-            use: getStyleLoaders({ importLoaders: 2 }, 'sass-loader'),
+            use: getStyleLoaders({
+              importLoaders: 2,
+              localIdentName: '[path]-[hash:base64:5]',
+              importLoaders: 2,
+              camelCase: true,
+              sourceMap: true
+            }, 'sass-loader'),
           },
           // Adds support for CSS Modules, but using SASS
           // using the extension .module.scss or .module.sass
@@ -309,14 +326,13 @@ module.exports = {
                 importLoaders: 2,
                 modules: true,
                 getLocalIdent: getCSSModuleLocalIdent,
+                localIdentName: '[path]-[hash:base64:5]',
+                importLoaders: 2,
+                camelCase: true,
+                sourceMap: true
               },
               'sass-loader'
             ),
-          },
-          {
-            test: /\.scss$/,
-            include: paths.appSrc,
-            loaders: ["style", "css", "sass"]
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
