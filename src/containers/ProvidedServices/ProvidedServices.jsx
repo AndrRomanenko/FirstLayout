@@ -48,7 +48,8 @@ const ProvidedServices = () => (
             image={item.image}
             title={item.title}
             description={item.description}
-          />))
+          />
+        ))
       }
     </div>
   </div>

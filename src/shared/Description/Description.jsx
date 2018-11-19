@@ -4,6 +4,6 @@ import React from 'react';
 import styles from './Description.scss';
 
 
-const Description = ({ text }) => <div className={styles.description}>{text}</div>;
+const Description = ({ color, text }) => <div className={`${styles[color]} ${styles.description}`}>{text}</div>;
 
 export default Description;
