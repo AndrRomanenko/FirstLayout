@@ -19,3 +19,7 @@
   text-transform: uppercase;
   color: #3c4761;
 }
+
+:local(.progressChart) {
+  stroke-linecap: 'square',
+}
