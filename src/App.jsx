@@ -1,12 +1,13 @@
 import React from 'react';
+
 import Header from 'Containers/Header';
 import ProvidedServices from 'Containers/ProvidedServices';
 
 const App = () => (
-  <div>
+  <React.Fragment>
     <Header />
     <ProvidedServices />
-  </div>
+  </React.Fragment>
 );
 
 export default App;

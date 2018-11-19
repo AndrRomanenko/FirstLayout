@@ -5,32 +5,33 @@
     color: #ffff;
     text-transform: uppercase;
 
-    :local(ul) {
+    :local(.listContainer) {
       padding-left: 13%;
+    }
 
-      :local(li) {
-        display: inline;
-        :local(.navigationButton) {
-          text-transform: uppercase;
-          margin: 0 1%;
-          padding:1.5% 2%;
-          font-size: 16px;
-          display: inline-block;
-          text-align: center;
-          outline: none;
-          text-decoration: none;
-          color: #ffff;
-          border: none;
-          background-color: #ffffff00;
-          border-radius: 5px;
-          transition: background-color 0.2s ease-out;
+    :local(.list) {
+      display: inline;
+    }
+    
+    :local(.navigationButton) {
+      text-transform: uppercase;
+      margin: 0 1%;
+      padding:10px;
+      font-size: 16px;
+      display: inline-block;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      color: #ffff;
+      border: none;
+      background-color: #ffffff00;
+      border-radius: 5px;
+      transition: background-color 0.2s ease-out;
 
-          &:hover,
-          &:active {
-            background-color: #643a79;
-            transition: background-color 0.3s ease-in;
-          }
-        }
+      &:hover,
+      &:active {
+        background-color: #643a79;
+        transition: background-color 0.3s ease-in;
       }
     }
   }
@@ -42,35 +43,36 @@
     color: #ffff;
     text-transform: uppercase;
     
-    :local(ul) {
-    padding-inline-start: 0;
+    
+    :local(.listContainer) {
+      padding-inline-start: 0;
+    }
   
-    :local(li) {
-        display: block;
-        padding: 1%;
-        margin: 1%;
-        :local(.navigationButton) {
-          text-transform: uppercase;
-          width: 90%;
-          margin: 0 1%;
-          padding:1.5% 2%;
-          font-size: 30px;
-          display: inline-block;
-          text-align: center;
-          outline: none;
-          text-decoration: none;
-          color: #ffff;
-          border: none;
-          background-color: #ffffff00;
-          border-radius: 5px;
-          transition: background-color 0.2s ease-out;
+    :local(.list) {
+      display: block;
+      padding: 5px;
+      margin: 5px;
+    }
 
-          &:hover,
-          &:active {
-            background-color: #643a79;
-            transition: background-color 0.3s ease-in;
-          }
-        }
+    :local(.navigationButton) {
+      text-transform: uppercase;
+      width: 90%;
+      padding:15px;
+      font-size: 30px;
+      display: inline-block;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      color: #ffff;
+      border: none;
+      background-color: #ffffff00;
+      border-radius: 5px;
+      transition: background-color 0.2s ease-out;
+
+      &:hover,
+      &:active {
+        background-color: #643a79;
+        transition: background-color 0.3s ease-in;
       }
     }
   }

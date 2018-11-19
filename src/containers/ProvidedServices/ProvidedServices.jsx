@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 
 import Dash from 'Shared/Dash';
@@ -12,7 +11,7 @@ import rocketSrc from './assets/rocket.svg';
 import pencilSrc from './assets/pencil.svg';
 import gearsSrc from './assets/gears.svg';
 
-const DATA = [
+const fetchData = [
   {
     image: flagSrc,
     title: 'Branding',
@@ -44,7 +43,7 @@ const ProvidedServices = () => (
     />
     <div className={styles.content}>
       {
-        DATA.map(item => (
+        fetchData.map(item => (
           <ItemCard
             image={item.image}
             title={item.title}

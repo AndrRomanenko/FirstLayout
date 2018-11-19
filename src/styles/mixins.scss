@@ -1,8 +1,8 @@
 @import "Styles/variables.scss";
 
-@mixin header-primary-style() {
+@mixin title-primary-style() {
   color: #ffffff;
-  font-size: 240%;
+  font-size: 2.4em;
   text-align: center;
   font-weight: 900;
   text-transform: uppercase;

@@ -1,10 +1,5 @@
+@import "Styles/mixins.scss";
+
 :local(.title) {
-  color: #ffffff;
-  font-size: 240%;
-  text-align: center;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding-top: 7%;
-  padding-bottom: 0.6%;
+  @include title-primary-style();
 }
