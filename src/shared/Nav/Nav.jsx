@@ -1,21 +1,14 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import Button from 'Shared/Button';
 import styles from './Nav.scss';
 
-const buttons = [
-  'Home',
-  'About',
-  'Work',
-  'Blog',
-  'Contact',
-];
-
-const Nav = () => (
+const Nav = ({ links }) => (
   <nav className={styles.nav}>
     <ul className={styles.listContainer}>
       {
-        buttons.map(item => (
+        links.map(item => (
           <li className={styles.list}>
             <Button
               btnType="button"
