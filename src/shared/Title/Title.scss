@@ -3,3 +3,7 @@
 :local(.title) {
   @include title-primary-style();
 }
+
+:local(.aqua) {
+  color: #3c4761;
+}
