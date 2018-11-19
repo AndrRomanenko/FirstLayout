@@ -75,13 +75,9 @@ const Team = () => {
       />
       <div className={styles.content}>
         {
-        employees.map(item => (
+        employees.map(employee => (
           <EmpCard
-            photo={item.photo}
-            name={item.name}
-            position={item.position}
-            about={item.about}
-            contacts={item.contacts}
+            {...employee}
           />
         ))
       }

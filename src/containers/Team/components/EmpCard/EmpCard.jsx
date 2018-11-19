@@ -17,11 +17,9 @@ const EmpCard = ({
     <div className={styles.about}>{about}</div>
     <div className={styles.contacts}>
       {
-        contacts.map(item => (
+        contacts.map(contact => (
           <ContactButton
-            image={item.image}
-            link={item.link}
-            color={item.color}
+            {...contact}
           />
         ))
       }
