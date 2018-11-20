@@ -4,6 +4,10 @@
   @include title-primary-style();
 }
 
+:local(.white) {
+  color: #ffffff;
+}
+
 :local(.aqua) {
   color: #3c4761;
 }
