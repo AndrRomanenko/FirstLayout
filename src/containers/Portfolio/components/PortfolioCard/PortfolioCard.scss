@@ -1,0 +1,25 @@
+:local(.card) {
+  margin: 2rem 0;
+  display: inline-block;
+  text-align: center;
+  width: 564px;
+
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
+}
+
+:local(.title) {
+  text-align: center;
+  font-weight: 300;
+  color: #393939;
+  white-space: nowrap;
+}
+
+:local(.image) {
+  width: 75%;
+  max-width: 540px;
+  @media (min-width: 1150px) {
+    width: 540px;
+  }
+}

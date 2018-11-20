@@ -3,3 +3,40 @@
 :local(.portfolio) {
   @include containers-primary-style(#ffdd99);
 }
+
+:local(.cardContainer) {
+  width: 1150px;
+  text-align: center;
+
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
+}
+
+:local(.button) {
+  background-color: #17c2a4;
+  color: #ffff;
+  padding: 10px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.27px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  min-width: 300px;
+  min-height: 70px;
+  text-transform: uppercase;
+  box-shadow: 0 4px #159981;
+  margin-bottom: 7.5rem;
+  @media (max-width: 1020px) {
+    margin-bottom: 3rem;
+  }
+
+  &:hover {
+    background: #27ddbc;
+  }
+  &:active {
+    box-shadow: 0 0px #159981;
+    transform: translateY(2px);
+  }
+}
