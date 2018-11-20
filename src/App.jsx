@@ -5,6 +5,7 @@ import ProvidedServices from 'Containers/ProvidedServices';
 import Team from 'Containers/Team/Team';
 import Skills from 'Containers/Skills';
 import Portfolio from 'Containers/Portfolio';
+import Reviews from 'Containers/Reviews/Reviews';
 
 const App = () => (
   <React.Fragment>
@@ -13,6 +14,7 @@ const App = () => (
     <Team />
     <Skills />
     <Portfolio />
+    <Reviews />
   </React.Fragment>
 );
 
