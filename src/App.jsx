@@ -1,18 +1,17 @@
 import React from 'react';
+
 import Header from 'Containers/Header';
 import ProvidedServices from 'Containers/ProvidedServices';
 import Team from 'Containers/Team/Team';
-import Skills from 'Containers/Skills/Skills';
-import Portfolio from 'Containers/Portfolio/Portfolio';
+import Skills from 'Containers/Skills';
 
 const App = () => (
-  <div>
+  <React.Fragment>
     <Header />
     <ProvidedServices />
     <Team />
     <Skills />
-    <Portfolio />
-  </div>
+  </React.Fragment>
 );
 
 export default App;

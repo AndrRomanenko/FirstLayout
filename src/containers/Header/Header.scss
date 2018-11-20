@@ -11,50 +11,51 @@
 }
 
 :local(.menu){
-  padding-top: 5%;
+  padding-top: 40px;
 }
 
 :local(.message) {
-  padding: 8% 19% 0 19%;
+  padding: 8vw 19vw 0;
   text-align: center;
   color: #f7f3ea;
   font-size: 245%;
   font-weight: 700;
+  
 
   @media (max-width: 1020px) {
-    padding-top: 4%;
+    padding: 8vw 5vw 0;
   }
 }
 
 :local(.buttonContainer) {
   text-align: center;
-  padding-bottom: 10%;
-  padding-top: 3%;
+  padding: 40px 0;
 
 }
 
 :local(.button) {
   background-color: #eb7d4b;
-  border: none;
   color: #ffff;
-  padding: 1.7% 7%;
+  padding: 10px 35px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
   letter-spacing: 0.27px;
   font-weight: 600;
-  margin: 4px 2px;
+  margin-bottom: 70px;
   min-width: 300px;
   min-height: 70px;
-  cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 0 4px#ad613ed0;
-  
+  box-shadow: 0 4px #ad613ed0;
+  @media (max-width: 1020px) {
+    margin-bottom: 30px;
+  }
+
   &:hover {
     background: #ff9e71;
   }
   &:active {
-    box-shadow: 0 0px#ad613ed0;
+    box-shadow: 0 0px #ad613ed0;
     transform: translateY(2px);
   }
 }

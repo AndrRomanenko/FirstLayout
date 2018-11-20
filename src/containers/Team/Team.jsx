@@ -7,120 +7,83 @@ import Description from 'Shared/Description';
 import EmpCard from './components/EmpCard';
 
 import Photo from './assets/Photo.svg';
-import mail from './components/ContactButton/assets/mail.svg';
-import facebook from './components/ContactButton/assets/facebook.svg';
-import linkedin from './components/ContactButton/assets/linkedin.svg';
-import twitter from './components/ContactButton/assets/twitter.svg';
+import mailImg from './components/ContactButton/assets/mail.svg';
+import facebookImg from './components/ContactButton/assets/facebook.svg';
+import linkedinImg from './components/ContactButton/assets/linkedin.svg';
+import twitterImg from './components/ContactButton/assets/twitter.svg';
 
 import styles from './Team.scss';
 
-const Team = () => (
-  <div className={styles.team}>
-    <Title color="aqua" text="MEET OUR BEAUTIFUL TEAM" />
-    <Dash />
-    <Description
-      color="aqua"
-      text="We are a small team of designers and developers, who help brands with big ideas."
-    />
-    <div className={styles.content}>
-      <EmpCard
-        photo={Photo}
-        name="ANNE HATHAWAY"
-        position="CEO / Marketing Guru"
-        about="Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
-        contacts={[
-          {
-            image: facebook,
-            link: 'facebook.com',
-            color: 'blue',
-          },
-          {
-            image: twitter,
-            link: 'twitter.com',
-          },
-          {
-            image: linkedin,
-            link: 'linkedin.com',
-          },
-          {
-            image: mail,
-            link: 'gmail.com',
-            color: 'red',
-          },
-        ]}
+const Team = () => {
+  const mail = {
+    image: mailImg,
+    link: 'https://gmail.com',
+    color: 'red',
+  };
+  const facebook = {
+    image: facebookImg,
+    link: 'https://facebook.com',
+    color: 'blue',
+  };
+  const linkedIn = {
+    image: linkedinImg,
+    link: 'https://linkedin.com',
+  };
+  const twitter = {
+    image: twitterImg,
+    link: 'https://twitter.com',
+  };
+
+  const employees = [
+    {
+      photo: Photo,
+      name: 'Anne Hathaway',
+      position: 'CEO / Marketing Guru',
+      about: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.',
+      contacts: [facebook, twitter, linkedIn, mail],
+    },
+    {
+      photo: Photo,
+      name: 'Kate Upton',
+      position: 'Creative Director',
+      about: 'Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.',
+      contacts: [twitter, linkedIn, mail],
+    },
+    {
+      photo: Photo,
+      name: 'Olivia Wilde',
+      position: 'Lead Designer',
+      about: 'Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.',
+      contacts: [facebook, twitter, linkedIn, mail],
+    },
+    {
+      photo: Photo,
+      name: 'Ashley Greene',
+      position: 'SEO / Developer',
+      about: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
+      contacts: [facebook, twitter, mail],
+    },
+  ];
+
+  return (
+    <div className={styles.team}>
+      <Title color="aqua" text="MEET OUR BEAUTIFUL TEAM" />
+      <Dash />
+      <Description
+        color="aqua"
+        text="We are a small team of designers and developers, who help brands with big ideas."
       />
-      <EmpCard
-        photo={Photo}
-        name="Kate Upton"
-        position="Creative Director"
-        about="Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident."
-        contacts={[
-          {
-            image: twitter,
-            link: 'twitter.com',
-          },
-          {
-            image: linkedin,
-            link: 'linkedin.com',
-          },
-          {
-            image: mail,
-            link: 'gmail.com',
-            color: 'red',
-          },
-        ]}
-      />
-      <EmpCard
-        photo={Photo}
-        name="Olivia Wilde"
-        position="Lead Designer"
-        about="Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt."
-        contacts={[
-          {
-            image: facebook,
-            link: 'facebook.com',
-            color: 'blue',
-          },
-          {
-            image: twitter,
-            link: 'twitter.com',
-          },
-          {
-            image: linkedin,
-            link: 'linkedin.com',
-          },
-          {
-            image: mail,
-            link: 'gmail.com',
-            color: 'red',
-          },
-        ]}
-      />
-      <EmpCard
-        photo={Photo}
-        name="Ashley Greene"
-        position="SEO / Developer"
-        about="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
-        contacts={[
-          {
-            image: facebook,
-            link: 'facebook.com',
-            color: 'blue',
-          },
-          {
-            image: twitter,
-            link: 'twitter.com',
-          },
-          {
-            image: mail,
-            link: 'gmail.com',
-            color: 'red',
-          },
-        ]}
-      />
+      <div className={styles.content}>
+        {
+        employees.map(employee => (
+          <EmpCard
+            {...employee}
+          />
+        ))
+      }
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Team;

@@ -7,7 +7,7 @@ import styles from './Button.scss';
 const Button = ({ btnType, className, label }) => (
   <button
     type={btnType}
-    className={className}
+    className={`${styles.button} ${className}`}
   >
     {label}
   </button>

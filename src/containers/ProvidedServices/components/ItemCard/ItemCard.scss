@@ -9,11 +9,10 @@
   @media (max-width: 1020px) {
     width: 100%;
     padding: 2.5em 0;
-    max-width: 9999px;
     }
 }
 
-:local(.title) {
+:local(.cardTitle) {
   padding-top: 1.5em;
   text-transform: uppercase;
   color: #ffffff;

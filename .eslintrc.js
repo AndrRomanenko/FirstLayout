@@ -4,6 +4,5 @@ module.exports = {
         "no-undef": "off",
         "eol-last": "off",
         "import/no-unresolved": "off",
-        "react/prop-types": "off"
     }
 };

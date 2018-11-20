@@ -1,11 +1,8 @@
-
 @import "Styles/mixins.scss";
-
 
 :local(.services) {
   @include containers-primary-style(#17c2a4);
 }
-
 
 :local(.content) {
   @media (max-width: 1020px) {
@@ -14,5 +11,4 @@
     align-items: center;
     }
   display: flex;
-  height: 50%;
 }
