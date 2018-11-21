@@ -3,3 +3,11 @@
 :local(.container) {
   @include containers-primary-style(#d74680);
 }
+
+:local(.contentContainer) {
+  width: 1200px;
+
+  @media(max-width: 1199px) {
+    width: 90%;
+  }
+}
