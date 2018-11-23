@@ -1,0 +1,104 @@
+:local(.button) {
+  background-color: #30bae7;
+  color: #ffff;
+  padding: 10px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.27px;
+  font-weight: 600;
+  margin: 50px 0 70px 0;
+  min-width: 300px;
+  min-height: 70px;
+  text-transform: uppercase;
+  box-shadow: 0 4px #1c8eb4;
+  transition: all 0.5s;
+
+  &:disabled {
+    background-color: #979797;
+    box-shadow: 0 4px #646464;
+    cursor: not-allowed;
+    &:hover {
+      background-color: #ff5a5a;
+      box-shadow: 0 4px #9b3535;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    background: #5dd7ff;
+  }
+  &:active {
+    box-shadow: 0 0px #1c8eb4;
+    transform: translateY(2px);
+  }
+}
+
+:local(.formContainer) {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  @media (max-width: 1199px) {
+    width: 85%;
+  }
+}
+:local(.userInfo) {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+:local(.fields) {
+  display: flex;
+  width: 100%;
+  flex-direction: column
+}
+
+:local(.infoField) {
+  border: none;
+  color: white;
+  // width: 40%;
+  background-color: #273a71;
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 1rem;
+  @media (min-width: 1200px) {
+    width: 40%;
+  }
+  @media (max-width: 1199px) {
+    // width: 100%;
+    margin: 1rem 0;
+  }
+
+}
+:local(.FieldError) {
+  border: 2px solid red !important;
+}
+
+:local(.messageField) {
+  border: none;
+  color: white;
+  background-color: #273a71;
+  border-radius: 5px;
+  padding: 25px 30px;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  height: 7rem;
+  font: 400 Arial;
+}
+
+:local(::placeholder){
+  color: white;
+}
+
