@@ -1,7 +1,6 @@
 /* eslint-disable react/button-has-type */
-/* {`${styles.button} ${className}`} */
 import React from 'react';
-
+import cn from 'classnames';
 import { string } from 'prop-types';
 import styles from './Button.scss';
 
@@ -16,7 +15,7 @@ const Button = (props) => {
   return (
     <button
       type={btnType}
-      className={`${styles.button} ${className}`}
+      className={cn(styles.button, className)}
       {...restProps}
     >
       {label}
