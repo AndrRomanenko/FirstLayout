@@ -9,7 +9,7 @@ const Nav = ({ links }) => (
     <ul className={styles.listContainer}>
       {
         links.map(item => (
-          <li className={styles.list}>
+          <li className={styles.list} key={item}>
             <Button
               btnType="button"
               className={styles.navigationButton}

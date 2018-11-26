@@ -77,6 +77,7 @@ const Team = () => {
         {
         employees.map(employee => (
           <EmpCard
+            key={employee.name}
             {...employee}
           />
         ))

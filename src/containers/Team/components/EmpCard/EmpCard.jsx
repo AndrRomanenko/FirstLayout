@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
 
 import { string } from 'prop-types';
@@ -19,6 +17,7 @@ const EmpCard = ({
       {
         contacts.map(contact => (
           <ContactButton
+            key={contact.link}
             {...contact}
           />
         ))
