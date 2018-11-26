@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { string, array } from 'prop-types';
+import { string, arrayOf, shape } from 'prop-types';
 import ContactButton from '../ContactButton';
 import defaultPhoto from '../../assets/Photo.svg';
 import styles from './EmpCard.scss';
@@ -31,8 +31,10 @@ EmpCard.propTypes = {
   name: string,
   position: string,
   about: string,
-  // eslint-disable-next-line react/forbid-prop-types
-  contacts: array,
+  contacts: arrayOf(shape({
+    image: string,
+    link: string,
+  })),
 };
 
 EmpCard.defaultProps = {
