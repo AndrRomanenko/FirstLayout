@@ -43,6 +43,7 @@ const Skills = () => {
           skillsData.map(skill => (
             <SkillCard
               {...skill}
+              key={skill.title}
             />
           ))
         }

@@ -45,6 +45,7 @@ const ProvidedServices = () => (
       {
         fetchData.map(item => (
           <ItemCard
+            key={item.title}
             image={item.image}
             title={item.title}
             description={item.description}

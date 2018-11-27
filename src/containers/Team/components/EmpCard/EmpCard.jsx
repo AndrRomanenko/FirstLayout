@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
 
-import { string } from 'prop-types';
+import { string, arrayOf, shape } from 'prop-types';
 import ContactButton from '../ContactButton';
 import defaultPhoto from '../../assets/Photo.svg';
 import styles from './EmpCard.scss';
@@ -19,6 +17,7 @@ const EmpCard = ({
       {
         contacts.map(contact => (
           <ContactButton
+            key={contact.link}
             {...contact}
           />
         ))
@@ -32,7 +31,10 @@ EmpCard.propTypes = {
   name: string,
   position: string,
   about: string,
-  contacts: string,
+  contacts: arrayOf(shape({
+    image: string,
+    link: string,
+  })),
 };
 
 EmpCard.defaultProps = {

@@ -46,7 +46,7 @@ const Portfolio = () => {
       <div className={styles.cardContainer}>
         {
         cards.map(card => (
-          <PortfolioCard {...card} />
+          <PortfolioCard {...card} key={card.title} />
         ))
       }
       </div>

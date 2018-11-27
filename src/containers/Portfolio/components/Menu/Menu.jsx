@@ -12,6 +12,7 @@ const Menu = ({ buttons }) => (
           btnType="button"
           className={styles.menuButton}
           label={button}
+          key={button}
         />
       ))
     }

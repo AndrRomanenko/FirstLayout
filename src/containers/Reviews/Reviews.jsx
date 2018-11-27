@@ -38,7 +38,7 @@ const Reviews = () => {
       <div className={styles.contentContainer}>
         {
          reviews.map(rewiew => (
-           <ReviewCard {...rewiew} />
+           <ReviewCard {...rewiew} key={rewiew.name} />
          ))
        }
       </div>
