@@ -1,0 +1,10 @@
+@import 'Styles/index.scss';
+
+:local(.button) {
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

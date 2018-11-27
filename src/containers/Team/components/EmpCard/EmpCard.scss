@@ -1,0 +1,49 @@
+:local(.empCard) {
+  display: inline-block;
+  max-width: 220px;
+  padding: 55px;
+  text-align: center;
+  color: #3c4761;
+  max-height: 470px;
+  height: 1fr;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    padding: 2.5em 0;
+    max-width: 500px;
+  }
+
+  @media (min-width: 850px) and (max-width: 1250px){
+    width: 50%;
+    padding: 2.5em 0;
+    max-width: 500px;
+  }
+}
+
+:local(.name) {
+  padding-top: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 140%;
+  color: #3c4761;
+}
+
+:local(.position) {
+  color: #30bae7;
+  text-align: center;
+  padding: 5% 0%;
+}
+
+:local(.about) {
+  text-align: center;
+  line-height: 145%;
+  font-size: 95%;
+  height: 27.5%;
+}
+
+:local(.contacts) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

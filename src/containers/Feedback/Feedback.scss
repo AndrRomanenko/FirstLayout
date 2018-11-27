@@ -1,0 +1,5 @@
+@import 'Styles/mixins.scss';
+
+:local(.feedback) {
+  @include containers-primary-style(#3c5499);
+}

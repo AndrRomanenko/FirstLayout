@@ -1,0 +1,20 @@
+:local(.logo) {
+  width: 50%;
+  display: inline-block;
+
+  @media (max-width: 1020px) {
+    text-align: center;
+    width: 100%;
+  }
+
+  :local(.logoImage) {
+    padding-left: 190px;
+    height: 65%;
+
+    @media (max-width: 1020px) {
+      align-self: center;
+      padding: 0;
+      width: 30%;
+    }
+  }
+}

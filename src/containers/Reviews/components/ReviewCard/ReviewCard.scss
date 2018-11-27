@@ -1,0 +1,73 @@
+@media (min-width: 1200px) {
+
+  :local(.card) {
+    margin: 3rem 2rem;
+    display: inline-block;
+    color: white;
+    height: 170px;
+    width: 500px;
+  }
+
+  :local(.photoContainer) {
+    display: inline-block;
+    vertical-align:top;
+    padding: 0 2.2rem 0 0;
+  }
+
+  :local(.contentContainer) {
+    display: inline-block;
+    vertical-align:top;
+    width: 350px;
+  }
+
+  :local(.name) {
+    margin: 1rem 0 0.2rem;
+    text-transform: uppercase;
+  }
+
+  :local(.position) {
+    color: #ffdd99;
+    font-weight: 500;
+  }
+
+  :local(.review) {
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  :local(.card) {
+    margin: 4rem 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  :local(.contentContainer) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  :local(.name) {
+    margin: 1rem 0 0.2rem;
+    text-transform: uppercase;
+  }
+
+  :local(.position) {
+    color: #ffdd99;
+    font-weight: 500;
+  }
+
+  :local(.review) {
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+}

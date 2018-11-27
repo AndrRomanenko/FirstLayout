@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Header from 'Containers/Header';
+import ProvidedServices from 'Containers/ProvidedServices';
+import Team from 'Containers/Team/Team';
+import Skills from 'Containers/Skills';
+import Portfolio from 'Containers/Portfolio';
+import Reviews from 'Containers/Reviews';
+import Feedback from 'Containers/Feedback';
+import Footer from 'Containers/Footer';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit
-        <code>src/App.js</code>
-        and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>
+  <React.Fragment>
+    <Header />
+    <ProvidedServices />
+    <Team />
+    <Skills />
+    <Portfolio />
+    <Reviews />
+    <Feedback />
+    <Footer />
+  </React.Fragment>
 );
 
 export default App;
